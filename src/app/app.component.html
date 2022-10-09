@@ -1,0 +1,19 @@
+<button (click)="loadPosts()">load postst</button>
+<button (click)="createPost()">create Post</button>
+<button (click)="deletePost()">delete Post</button>
+
+<div *ngFor="let post of posts" class="card">
+    <h1>{{post.userId}}</h1>
+    <h1>{{post.title}}</h1>
+
+</div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
